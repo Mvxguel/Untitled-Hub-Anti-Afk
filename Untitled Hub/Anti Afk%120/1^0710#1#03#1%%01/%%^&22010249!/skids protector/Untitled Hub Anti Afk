@@ -1,0 +1,93 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local AntiAFk = Instance.new("ScreenGui")
+local GUI = Instance.new("ImageLabel")
+local AntiAFKTEXT = Instance.new("TextLabel")
+local Status = Instance.new("TextLabel")
+local TextLabel = Instance.new("TextLabel")
+local TextLabel_2 = Instance.new("TextLabel")
+local TextBox = Instance.new("TextBox")
+
+--Properties:
+
+AntiAFk.Name = "Anti AFk"
+AntiAFk.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+GUI.Name = "GUI"
+GUI.Parent = AntiAFk
+GUI.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+GUI.BackgroundTransparency = 1.000
+GUI.Position = UDim2.new(0.359489053, 0, 0.271347255, 0)
+GUI.Size = UDim2.new(0, 355, 0, 268)
+GUI.Image = "rbxassetid://3570695787"
+GUI.ImageColor3 = Color3.fromRGB(39, 39, 39)
+GUI.ScaleType = Enum.ScaleType.Slice
+GUI.SliceCenter = Rect.new(100, 100, 100, 100)
+GUI.SliceScale = 0.120
+GUI.Draggable = true
+
+AntiAFKTEXT.Name = "Anti AFK TEXT"
+AntiAFKTEXT.Parent = GUI
+AntiAFKTEXT.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AntiAFKTEXT.BackgroundTransparency = 1.000
+AntiAFKTEXT.Position = UDim2.new(0.0563380271, 0, 0, 0)
+AntiAFKTEXT.Size = UDim2.new(0, 319, 0, 50)
+AntiAFKTEXT.Font = Enum.Font.Code
+AntiAFKTEXT.Text = "Anti Afk"
+AntiAFKTEXT.TextColor3 = Color3.fromRGB(255, 255, 255)
+AntiAFKTEXT.TextSize = 30.000
+AntiAFKTEXT.TextWrapped = true
+
+Status.Name = "Status"
+Status.Parent = GUI
+Status.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Status.BackgroundTransparency = 1.000
+Status.Position = UDim2.new(0, 0, 0.354477614, 0)
+Status.Size = UDim2.new(0, 355, 0, 50)
+Status.Font = Enum.Font.Code
+Status.Text = "Status: Activated"
+Status.TextColor3 = Color3.fromRGB(255, 255, 255)
+Status.TextScaled = true
+Status.TextSize = 14.000
+Status.TextWrapped = true
+
+TextLabel.Parent = GUI
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(0.216901407, 0, 0.850746274, 0)
+TextLabel.Size = UDim2.new(0, 200, 0, 50)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = ".gg/urmNKu98X3"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextSize = 18.000
+TextLabel.TextTransparency = 0.880
+
+TextLabel_2.Parent = GUI
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.Position = UDim2.new(0.216901407, 0, 0.787313461, 0)
+TextLabel_2.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_2.Font = Enum.Font.SourceSans
+TextLabel_2.Text = "Made by 1tzmckii#8314"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextSize = 22.000
+TextLabel_2.TextTransparency = 0.770
+TextLabel_2.TextWrapped = true
+
+TextBox.Parent = GUI
+TextBox.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextBox.BackgroundTransparency = 1.000
+TextBox.Position = UDim2.new(0, 0, 0.582089543, 0)
+TextBox.Size = UDim2.new(0, 355, 0, 50)
+TextBox.Font = Enum.Font.SourceSans
+TextBox.PlaceholderText = "This script is obfuscated from skids"
+TextBox.Text = ""
+TextBox.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextBox.TextSize = 14.000
+
+game:service'Players'.LocalPlayer.Idled:connect(function()
+	bb:CaptureController()bb:ClickButton2(Vector2.new())
+	ab.Text="Roblox tried to kick u but i kicked him instead"wait(2)ab.Text="Status Activated"end)
